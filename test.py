@@ -30,7 +30,7 @@ class DIP(tk.Frame):
         self.buttonradio1.grid(row=1, column=0)
         self.buttonradio2.grid(row=1, column=1)
         self.buttonradio3.grid(row=1, column=2)
-        self.label1 = tk.Label(self, border = 5,bg = 'black')
+        self.label1 = tk.Label(self, border = 5)
         self.label2 = tk.Label(self, border = 25)
         self.label1.grid(row = 8, column = 0)
         self.label2.grid(row = 8, column = 2)
