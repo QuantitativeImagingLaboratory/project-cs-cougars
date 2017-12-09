@@ -34,18 +34,7 @@ class DIP(tk.Frame):
         self.label2 = tk.Label(self, border = 25)
         self.label1.grid(row = 8, column = 0)
         self.label2.grid(row = 8, column = 2)
-        # filename = "C:/Users/Roopa/Documents/GitHub/assignment-2-roopa-rajala/Lenna.png"
-        # self.fn = filename
-        # self.img = Image.open(self.fn)
-        # self.I = np.asarray(self.img)
-        # l, h = self.img.size
-        # text = str(2 * l + 100) + "x" + str(h + 50) + "+0+0"
-        # self.parent.geometry(text)
-        # photo = ImageTk.PhotoImage(self.img)
-        # self.label1.configure(image=photo)
-        # self.label2.configure(image=photo)
-        # self.label1.image = photo  # keep a reference!
-        # self.label2.image = photo
+
         self.convertButton = tk.Button(self, text="Convert", bg="green", command=self.setImage)
         self.convertButton.grid(row=5, column=1)
 
@@ -67,9 +56,9 @@ class DIP(tk.Frame):
         button4 = tk.Radiobutton(self, text="Color Transformation", variable=self.pseudovar, value=2)
         self.slicesNo = tk.StringVar()
 
-        self.slicesNo.set(1)
+        self.slicesNo.set(2)
 
-        dropdownSlices = tk.OptionMenu(self, self.slicesNo, 1, 2, 3, 4, 5, 6, 7, 8, command=self.func)
+        dropdownSlices = tk.OptionMenu(self, self.slicesNo, 2, 3, 4, 5, 6, 7, 8, command=self.func)
 
         dropdownSlices.grid(row=3, column=1)
         button3.grid(row=2, column=1)
